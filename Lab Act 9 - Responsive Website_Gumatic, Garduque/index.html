@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <h1 id="title"> Vtuber Survey </h1>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+<body>
+<p id="description">Thank you for taking the time on answering the survey! This is just a joke website and is not to be taken seriously.</p>
+
+<form id="survey-form">
+  <div class="input-element">
+  <label id="name-label">
+    Name
+    </label>
+    <input placeholder="name" type="name" id="name" name="name" for="name" type="text" required/>
+  </div>
+    <div class="input-element">
+  <label id="email-label">
+    Email
+    </label>
+    <input placeholder="email" type="email" id="email" name="email" for="email" type="text" required/>
+      <div class="input-element">
+  <label id="number-label">
+    Age
+    </label>
+    <input placeholder="number" id="number" min="10" max="120" type="number" required/>
+  </div>
+  </div>
+   <div class="input-element">
+  <label id="select-label">
+    Who is your Vtuber Oshi?
+    </label>
+    <select id="dropdown">
+      <option>-Options-</option>
+      <option>Gawr Gura (HoloEN Gen 1)</option>
+      <option>Mori Calliope (HoloEN Gen 1)</option>
+      <option>Amelia Watson (HoloEN Gen 1)</option>
+      <option>Ninomae Ina'nis (HoloEN Gen 1)</option>
+      <option>Takanashi Kiara (HoloEN Gen 1)</option>
+      <option>IRyS (Project Hope)</option>
+      <option>Ouro Kronii (HoloEN Gen 2)</option>
+      <option>Nanashi Mumei (HoloEN Gen 2)</option>
+      <option>Ceres Fauna (HoloEN Gen 2)</option>
+      <option>Hakos Baelz (HoloEN Gen 2)</option>
+      <option>Tsukumo Sana (HoloEN Gen 2)</option>
+      <option>Koseki Bijou (HoloEN Gen 3)</option>
+      <option>Nerissa Ravencroft (HoloEN Gen 3)</option>
+      <option>Shiori Novella (HoloEN Gen 3)</option>
+      <option>Fuwawa Abyssguard (HoloEN Gen 3)</option>
+      <option>Mococo Abyssguard (HoloEN Gen 3)</option>
+      <option>My oshi isn't on this list (yet)</option>
+    </select>
+  </div>
+  <div>
+    <label>How long have you been subscribed to your Oshi?</label>
+    </div>
+    <div>
+    <label><input type="radio" value="radio" name="subs" />Since Day One</label>
+    </div>
+    <div>
+    <label><input type="radio" value="radio" name="subs" />About a Month or so</label>
+  </div>
+  <div>
+    <label><input type="radio" value="radio" name="subs" />6 Months</label>
+  </div>
+  <div>
+    <label><input type="radio" value="radio" name="subs" />A Year</label>
+  </div>
+
+  <div>
+    <label>Which VTuber Companies are you familiar with?</label>
+    </div>
+    <div>
+    <label><input type="checkbox" value="checkbox" name="dono" />Cover Corp.</label>
+    </div>
+    <div>
+    <label><input type="checkbox" value="checkbox" name="dono" />Nijisanji</label>
+  </div>
+  <div>
+    <label><input type="checkbox" value="checkbox" name="dono" />Idol Corp.</label>
+  </div>
+  <div>
+    <label><input type="checkbox" value="checkbox" name="dono" />VShojo</label>
+  </div>
+  <div>
+  <label for="bio">Provide a bio:
+  <textarea id="bio" name="bio" rows="3" cols="30" placeholder="a"></textarea>
+  </label>
+  </div>
+  <div>
+  <input id="submit" type="submit" value="Submit" />
+  </div>
+</form>
+</body>
+</head>
+
