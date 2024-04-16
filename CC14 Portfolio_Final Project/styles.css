@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://drive.google.com/thumbnail?id=1-0pTEKiMKH613Vs2oJue0b6J9K2_5zAg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+  }
+  
+  header {
+    background-color: #333;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  header nav a:hover {
+    background-color: #555;
+  }
+  
+  .home-section {
+    padding: 40px;
+    position: relative;
+    color: white;
+  }
+  
+  .home-section h1,
+  .home-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .home-section p {
+    text-align: justify;
+    margin-bottom: 40px;
+    color: white;
+  }
+  
+  .cta-button {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cta-button:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio-description {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio-title {
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio-description {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .about-section {
+    background-color: white;
+    padding: 40px;
+    position: relative;
+  }
+  
+  .ache-section {
+    background-color: white;
+    padding: 30px;
+    position: relative;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .section-text {
+    text-align: justify;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      
+      text-align: center;
+      padding: 10px 20px;
+      
+      display: flex;
+      flex-wrap: wrap;
+      
+      padding: 0 4px;
+  
+  }
+  
+  .card {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 20px;
+      
+      width: 80%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+  }
+  
+  .card img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 8px;
+      vertical-align: middle;
+  }
+  
+  /* Animations */
+  .home-title {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 0.4s;
+  }
+  
+  .home-text {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 0.6s;
+  }
+  
+  .cta-button {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 0.8s;
+  }
+  
+  .section-title {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+  
+  .section-text {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 1.2s;
+  }
+  
+  .profile-pic {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 1.4s;
+  }
+  
+  .portfolio-grid {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 1.6s;
+  }
+  
+  .portfolio-item {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 1.8s;
+  }
+  
+  .portfolio-title {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 2s;
+  }
+  
+  .portfolio-description {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 2.2s;
+  }
+  
+  .resume-title {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 2.4s;
+  }
+  
+  .resume-text {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 2.6s;
+  }
+  
+  .resume-button {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 2.8s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
